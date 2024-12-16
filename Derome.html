@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEROME - Студия дубляжа</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Чёрный фон */
+            color: #fff; /* Белый текст */
+            line-height: 1.4; /* Уменьшено расстояние */
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(145deg, #1c1c1c, #000); /* Лёгкий градиент */
+            position: relative;
+        }
+        header h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 4em;
+            font-weight: 700;
+            margin: 0;
+            text-transform: uppercase; /* Заглавные буквы */
+            color: #fff;
+            text-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+        header::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 5px;
+            margin: 20px auto 0;
+            background-color: #fff;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+        main p {
+            text-align: justify;
+            font-size: 1.1em;
+            margin-bottom: 10px; /* Уменьшено расстояние */
+        }
+        main a {
+            color: #1e90ff; /* Голубой цвет ссылок */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main a:hover {
+            text-decoration: underline;
+        }
+        .casting {
+            font-size: 2em;
+            font-weight: 700;
+            color: #ff0000;
+            text-transform: uppercase;
+            text-align: center;
+            cursor: pointer;
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* Эффект свечения */
+            transition: all 0.3s ease;
+        }
+        .casting:hover {
+            text-shadow: 0 0 30px rgba(255, 0, 0, 1); /* Увеличение свечения */
+        }
+        #casting-text {
+            display: none;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 20px;
+            background-color: #000;
+            border-top: 1px solid #444;
+        }
+        footer p {
+            margin: 0;
+        }
+        /* Стиль для иконки YouTube */
+        .youtube-link, .creator-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+            cursor: pointer;
+            color: #fff;
+            text-decoration: none;
+        }
+        .youtube-link i, .creator-link i {
+            font-size: 2em;
+            margin-right: 10px;
+            color: #ff0000; /* Красная иконка YouTube */
+        }
+        .youtube-link:hover, .creator-link:hover {
+            text-decoration: underline;
+        }
+        .creator-text {
+            font-size: 1.1em;
+            color: #ddd;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function toggleCastingText() {
+            var text = document.getElementById("casting-text");
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>СТУДИЯ ДУБЛЯЖА DEROME</h1>
+    </header>
+    <main>
+        <p>
+            Добро пожаловать на официальный сайт фан-студии **Derome**! Мы с любовью и профессионализмом озвучиваем различные проекты, но особое место в нашей работе занимает дубляж популярного сериала <strong>«Леди Баг и Супер-Кот»</strong>.
+        </p>
+        <p>
+            Наши озвучки создаются с вниманием к деталям, глубоким пониманием оригинальных персонажей и звучат в формате 5.1, чтобы вы могли наслаждаться любимыми историями в максимальном качестве.
+        </p>
+        <p>
+            Подпишитесь, чтобы первыми увидеть новые эпизоды, эксклюзивные материалы и узнать больше о том, как мы работаем над дубляжами!
+        </p>
+        <p>
+            📲 Следите за нами в Telegram:
+        </p>
+        <ul>
+            <li><a href="https://t.me/Derome1" target="_blank">Основной канал с релизами</a></li>
+            <li><a href="https://t.me/deromemain2" target="_blank">Дополнительный канал с новостями</a></li>
+        </ul>
+        <p>Спасибо, что выбираете Derome! Вместе мы делаем мир дубляжа лучше!</p>
+        
+        <div class="casting" onclick="toggleCastingText()">КАСТИНГ</div>
+        <div id="casting-text">
+            <p>Дорогие подписчики!</p>
+            <p>Мы хотим сообщить, что дубляж специального эпизода "Лондон на краю времени" временно задерживается. Причиной является отсутствие некоторых голосов, необходимых для завершения проекта.</p>
+            <p>Сейчас мы открываем кастинг на следующие роли:</p>
+            <ul>
+                <li>Лила</li>
+                <li>Аликс (15-25-70)</li>
+                <li>Габриэль</li>
+                <li>Надя (свободно)</li>
+                <li>Клара (свободно)</li>
+                <li>Кагами (свободно)</li>
+                <li>Сабина (свободно)</li>
+                <li>Натали (свободно)</li>
+            </ul>
+            <p>Если вы хотите принять участие в кастинге, пожалуйста, напишите в личные сообщения администрации - @DaA920. Мы будем рады услышать ваши примеры озвучки и обсудить возможность сотрудничества.</p>
+            <p>Спасибо за понимание и вашу поддержку! Вместе мы сделаем этот проект невероятным.</p>
+        </div>
+    </main>
+    
+    <!-- Иконка YouTube для основного канала -->
+    <footer>
+        <a class="youtube-link" href="https://youtube.com/@deronestudia?si=8kBHkJIIRXjHFvYF" target="_blank">
+            <i class="fab fa-youtube"></i> Мы в YouTube
+        </a>
+        <p>&copy; 2024 Derome. Все права защищены.</p>
+
+        <!-- Информация о создателе сайта -->
+        <div class="creator-text">
+            <p>Создатель сайта: <strong>MIRACULU THINGS</strong></p>
+            <a class="creator-link" href="https://youtube.com/@mlbthings?si=9TZR-Cn7BfCVoQch" target="_blank">
+                <i class="fab fa-youtube"></i> Канала создатель в YouTube
+            </a>
+        </div>
+    </footer>
+
+    <!-- Подключаем иконки FontAwesome для YouTube -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
